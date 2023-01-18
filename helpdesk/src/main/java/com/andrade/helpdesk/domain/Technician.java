@@ -1,0 +1,39 @@
+package com.andrade.helpdesk.domain;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import com.andrade.helpdesk.domain.enums.Profile;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.OneToMany;
+
+@Entity
+public class Technician extends Person{
+	
+	private static final long serialVersionUID = 1L;
+	
+	@OneToMany(mappedBy = "technician") // Anotação de relação um para muitos
+	private List<Request> requests = new ArrayList<>();
+
+	public Technician() {
+		super();
+		addProfile(Profile.TECHNICIAN);
+	}
+
+	public Technician(Integer id, String name, String cpf, String email, String password) {
+		super(id, name, cpf, email, password);
+		addProfile(Profile.TECHNICIAN);
+
+	}
+
+	public List<Request> getRequests() {
+		return requests;
+	}
+
+	public void setRequests(List<Request> requests) {
+		this.requests = requests;
+	}
+
+
+}

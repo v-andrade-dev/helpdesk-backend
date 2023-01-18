@@ -3,7 +3,7 @@ package com.andrade.helpdesk.domain.enums;
 public enum Profile {
 	ADMIN(0, "ROLE_ADMIN"),
 	CLIENT(1, "ROLE_CLIENT"),
-	TEChNICIAN(2, "ROLE_TECHNICIAN");
+	TECHNICIAN(2, "ROLE_TECHNICIAN");
 	
 	private Integer code;
 	private String description;
