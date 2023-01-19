@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import com.andrade.helpdesk.domain.enums.Profile;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.OneToMany;
@@ -13,6 +14,7 @@ public class Client extends Person{
 	
 	private static final long serialVersionUID = 1L;
 	
+	@JsonIgnore //impede serialização
 	@OneToMany(mappedBy = "client") // Anotação de relação um para muitos
 	private List<Request> requests = new ArrayList<>();
 
