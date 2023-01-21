@@ -14,6 +14,8 @@ import com.andrade.helpdesk.repositories.TechnicianRepository;
 import com.andrade.helpdesk.services.exceptions.DataIntegrityViolationException;
 import com.andrade.helpdesk.services.exceptions.ObjNotFoundException;
 
+import jakarta.validation.Valid;
+
 @Service
 public class TechnicianService {
 	
@@ -37,6 +39,24 @@ public class TechnicianService {
 		Technician newObj = new Technician(objDTO);
 		return repository.save(newObj);
 	}
+	
+	public Technician update(Integer id, @Valid TechnicianDTO objDTO) {
+		objDTO.setId(id);
+		Technician oldObj = findById(id);
+		uniqueDataValidation(objDTO);
+		oldObj = new Technician(objDTO);
+		return repository.save(oldObj);
+		
+	}
+	
+	public void delete(Integer id) {
+		Technician obj = findById(id);
+		if(obj.getRequests().size() > 0) {
+			throw new DataIntegrityViolationException("Técnico possui chamados cadastrados e não pose ser deletado!");
+		}
+		
+		repository.deleteById(id);
+	}
 
 	private void uniqueDataValidation(TechnicianDTO objDTO) {
 		Optional<Person> obj = personRepository.findByCpf(objDTO.getCpf());
@@ -49,4 +69,8 @@ public class TechnicianService {
 			throw new DataIntegrityViolationException("E-mail já cadastrado!");
 		}
 	}
+
+
+
+
 }

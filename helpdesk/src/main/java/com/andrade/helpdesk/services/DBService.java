@@ -29,14 +29,14 @@ public class DBService {
 	
 	public void DBInstance() {
 		
-		Technician tec1 = new Technician(null, "Carlos Eduardo", "123.456.852-85", "dudu@mail.com", "123");
+		Technician tec1 = new Technician(null, "Carlos Eduardo", "146.230.615-23", "dudu@mail.com", "123");
 		tec1.addProfile(Profile.ADMIN);
 		
-		Technician tec2 = new Technician(null, "Vinicius Andrade", "789.987.258-25", "andrade@mail.com", "123");
+		Technician tec2 = new Technician(null, "Vinicius Andrade", "845.785.933-12", "andrade@mail.com", "123");
 		tec2.addProfile(Profile.ADMIN);
 		
-		Client client1 = new Client(null, "Daniel Ribeiro", "600.129.240-63", "daniel@mail.com", "123");
-		Client client2 = new Client(null, "Carol Souza", "875.254.364-12", "carol@mail.com", "123");
+		Client client1 = new Client(null, "Daniel Ribeiro", "320.492.895-02", "daniel@mail.com", "123");
+		Client client2 = new Client(null, "Carol Souza", "633.281.507-81", "carol@mail.com", "123");
 
 	
 		Request req1 = new Request(null, Priority.MEDIUM, Status.PROGRESS, "Chamado 01", "Primeiro chamado", tec1, client1);
