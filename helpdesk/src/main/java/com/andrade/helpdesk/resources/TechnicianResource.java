@@ -18,6 +18,8 @@ import com.andrade.helpdesk.domain.Technician;
 import com.andrade.helpdesk.domain.dtos.TechnicianDTO;
 import com.andrade.helpdesk.services.TechnicianService;
 
+import jakarta.validation.Valid;
+
 @RestController
 @RequestMapping(value = "/technician")
 public class TechnicianResource {
@@ -41,7 +43,7 @@ public class TechnicianResource {
 	}
 	
 	@PostMapping
-	public ResponseEntity<TechnicianDTO> create(@RequestBody TechnicianDTO objDTO){
+	public ResponseEntity<TechnicianDTO> create(@Valid @RequestBody TechnicianDTO objDTO){
 		Technician newObj = service.create(objDTO);
 		URI uri = ServletUriComponentsBuilder.fromCurrentRequest().path("/{id}").buildAndExpand(newObj.getId()).toUri();
 		return ResponseEntity.created(uri).build();

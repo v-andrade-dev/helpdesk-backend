@@ -10,14 +10,20 @@ import com.andrade.helpdesk.domain.Technician;
 import com.andrade.helpdesk.domain.enums.Profile;
 import com.fasterxml.jackson.annotation.JsonFormat;
 
+import jakarta.validation.constraints.NotNull;
+
 public class TechnicianDTO implements Serializable{
 
 	private static final long serialVersionUID = 1L;
 
 	protected Integer id;
+	@NotNull(message = "Nome não pode ser vazio")
 	protected String name;
+	@NotNull(message = "CPF não pode ser vazio")
 	protected String cpf;
+	@NotNull(message = "E-mail não pode ser vazio")
 	protected String email;
+	@NotNull(message = "Senha não pode ser vazio")
 	protected String password;
 	protected Set<Integer> profiles = new HashSet<>();
 	
