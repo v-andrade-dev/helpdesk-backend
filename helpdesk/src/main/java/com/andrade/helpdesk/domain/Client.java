@@ -2,7 +2,9 @@ package com.andrade.helpdesk.domain;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
+import com.andrade.helpdesk.domain.dtos.ClientDTO;
 import com.andrade.helpdesk.domain.enums.Profile;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
@@ -28,6 +30,17 @@ public class Client extends Person{
 		addProfile(Profile.CLIENT);
 	}
 
+	public Client(ClientDTO obj) {
+		super();
+		this.id = obj.getId();
+		this.name = obj.getName();
+		this.cpf = obj.getCpf();
+		this.email = obj.getEmail();
+		this.password = obj.getPassword();
+		this.profiles = obj.getProfiles().stream().map(x -> x.getCode()).collect(Collectors.toSet());
+		this.creation_date = obj.getCreation_date();
+	}
+	
 	public List<Request> getRequests() {
 		return requests;
 	}
