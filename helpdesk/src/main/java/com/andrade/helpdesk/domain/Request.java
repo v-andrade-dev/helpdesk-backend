@@ -26,7 +26,7 @@ public class Request implements Serializable{
 	private Integer id;
 	
 	@JsonFormat(pattern = "dd/MM/yyyy")
-	private LocalDate Open_date = LocalDate.now();
+	private LocalDate open_date = LocalDate.now();
 	@JsonFormat(pattern = "dd/MM/yyyy")
 	private LocalDate close_date;
 	
@@ -68,11 +68,11 @@ public class Request implements Serializable{
 	}
 
 	public LocalDate getOpen_date() {
-		return Open_date;
+		return open_date;
 	}
 
 	public void setOpen_date(LocalDate open_date) {
-		Open_date = open_date;
+		this.open_date = open_date;
 	}
 
 	public LocalDate getClose_date() {
