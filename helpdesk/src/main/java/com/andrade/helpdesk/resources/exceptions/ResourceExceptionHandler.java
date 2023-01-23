@@ -15,6 +15,8 @@ import jakarta.servlet.http.HttpServletRequest;
 @ControllerAdvice
 public class ResourceExceptionHandler {
 	
+	//Classe que administra as exceções
+	
 	@ExceptionHandler(ObjNotFoundException.class)
 	public ResponseEntity<StandartError> objectnotFoundException(ObjNotFoundException e, 
 			HttpServletRequest request){
