@@ -30,7 +30,7 @@ public class Client extends Person{
 		addProfile(Profile.CLIENT);
 	}
 
-	public Client(ClientDTO obj) {
+	public Client(ClientDTO obj) { // Construtor do padrão DTO
 		super();
 		this.id = obj.getId();
 		this.name = obj.getName();

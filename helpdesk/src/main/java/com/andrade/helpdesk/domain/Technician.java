@@ -31,7 +31,7 @@ public class Technician extends Person{
 
 	}
 	
-	public Technician(TechnicianDTO obj) {
+	public Technician(TechnicianDTO obj) { // Construtor do padrão DTO
 		super();
 		this.id = obj.getId();
 		this.name = obj.getName();

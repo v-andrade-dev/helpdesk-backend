@@ -32,7 +32,7 @@ public abstract class Person implements Serializable {
 	protected Integer id;
 	protected String name;
 	
-	@CPF
+	@CPF // Anotação de validação de dados tipo CPF
 	@Column(unique = true) 
 	protected String cpf;
 	
