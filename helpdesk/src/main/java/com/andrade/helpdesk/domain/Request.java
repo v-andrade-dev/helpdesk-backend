@@ -58,6 +58,7 @@ public class Request implements Serializable{
 		this.technician = technician;
 		this.client = client;
 	}
+	
 
 	public Integer getId() {
 		return id;

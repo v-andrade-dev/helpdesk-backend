@@ -6,6 +6,8 @@ import java.time.LocalDate;
 import com.andrade.helpdesk.domain.Request;
 import com.fasterxml.jackson.annotation.JsonFormat;
 
+import jakarta.validation.constraints.NotNull;
+
 public class RequestDTO implements Serializable{
 	private static final long serialVersionUID = 1L;
 	
@@ -14,11 +16,17 @@ public class RequestDTO implements Serializable{
 	private LocalDate open_date = LocalDate.now();
 	@JsonFormat(pattern = "dd/MM/yyyy")
 	private LocalDate close_date;
+	@NotNull(message = "O campo Prioridade é obrigatório")
 	private Integer priority;
+	@NotNull(message = "O campo Staus é obrigatório")
 	private Integer status;
+	@NotNull(message = "O campo Título é obrigatório")
 	private String title;
+	@NotNull(message = "O campo Observações é obrigatório")
 	private String note;
+	@NotNull(message = "O campo Técnico é obrigatório")
 	private Integer technician;
+	@NotNull(message = "O campo Cliente é obrigatório")
 	private Integer client;
 	private String tecName;
 	private String clientName;
