@@ -1,8 +1,11 @@
 package com.andrade.helpdesk.resources.exceptions;
 
+<<<<<<< HEAD
 import javax.servlet.http.HttpServletRequest;
 
 import org.springframework.dao.DataIntegrityViolationException;
+=======
+>>>>>>> d55a6c077fccf3268de2af11398a65aa02332c33
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.FieldError;
@@ -10,8 +13,16 @@ import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 
+<<<<<<< HEAD
 import com.andrade.helpdesk.services.exceptions.ObjNotFoundException;
 
+=======
+import com.andrade.helpdesk.services.exceptions.DataIntegrityViolationException;
+import com.andrade.helpdesk.services.exceptions.ObjNotFoundException;
+
+import jakarta.servlet.http.HttpServletRequest;
+
+>>>>>>> d55a6c077fccf3268de2af11398a65aa02332c33
 @ControllerAdvice
 public class ResourceExceptionHandler {
 	
@@ -53,4 +64,8 @@ public class ResourceExceptionHandler {
 		return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(errors);
 		
 	}
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> d55a6c077fccf3268de2af11398a65aa02332c33

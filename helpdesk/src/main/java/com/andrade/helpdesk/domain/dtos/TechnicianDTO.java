@@ -6,12 +6,20 @@ import java.util.HashSet;
 import java.util.Set;
 import java.util.stream.Collectors;
 
+<<<<<<< HEAD
 import javax.validation.constraints.NotNull;
 
+=======
+>>>>>>> d55a6c077fccf3268de2af11398a65aa02332c33
 import com.andrade.helpdesk.domain.Technician;
 import com.andrade.helpdesk.domain.enums.Profile;
 import com.fasterxml.jackson.annotation.JsonFormat;
 
+<<<<<<< HEAD
+=======
+import jakarta.validation.constraints.NotNull;
+
+>>>>>>> d55a6c077fccf3268de2af11398a65aa02332c33
 public class TechnicianDTO implements Serializable{
 
 	private static final long serialVersionUID = 1L;
@@ -107,4 +115,8 @@ public class TechnicianDTO implements Serializable{
 	}
 	
 	
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> d55a6c077fccf3268de2af11398a65aa02332c33

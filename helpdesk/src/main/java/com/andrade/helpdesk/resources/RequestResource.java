@@ -4,8 +4,11 @@ import java.net.URI;
 import java.util.List;
 import java.util.stream.Collectors;
 
+<<<<<<< HEAD
 import javax.validation.Valid;
 
+=======
+>>>>>>> d55a6c077fccf3268de2af11398a65aa02332c33
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -21,6 +24,11 @@ import com.andrade.helpdesk.domain.Request;
 import com.andrade.helpdesk.domain.dtos.RequestDTO;
 import com.andrade.helpdesk.services.RequestService;
 
+<<<<<<< HEAD
+=======
+import jakarta.validation.Valid;
+
+>>>>>>> d55a6c077fccf3268de2af11398a65aa02332c33
 @RestController
 @RequestMapping(value = "/request")
 public class RequestResource {
@@ -53,4 +61,8 @@ public class RequestResource {
 		Request newObj = service.update(id, objDTO);
 		return ResponseEntity.ok().body(new RequestDTO(newObj));
 	}
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> d55a6c077fccf3268de2af11398a65aa02332c33

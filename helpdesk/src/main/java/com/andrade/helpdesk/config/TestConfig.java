@@ -18,4 +18,8 @@ public class TestConfig {
 	public void DBInstance() {
 		this.dbService.DBInstance();
 	}
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> d55a6c077fccf3268de2af11398a65aa02332c33

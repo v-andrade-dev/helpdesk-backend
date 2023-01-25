@@ -4,13 +4,22 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
+<<<<<<< HEAD
 import javax.persistence.Entity;
 import javax.persistence.OneToMany;
 
+=======
+>>>>>>> d55a6c077fccf3268de2af11398a65aa02332c33
 import com.andrade.helpdesk.domain.dtos.TechnicianDTO;
 import com.andrade.helpdesk.domain.enums.Profile;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
+<<<<<<< HEAD
+=======
+import jakarta.persistence.Entity;
+import jakarta.persistence.OneToMany;
+
+>>>>>>> d55a6c077fccf3268de2af11398a65aa02332c33
 @Entity
 public class Technician extends Person{
 	
@@ -51,4 +60,8 @@ public class Technician extends Person{
 	}
 
 
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> d55a6c077fccf3268de2af11398a65aa02332c33

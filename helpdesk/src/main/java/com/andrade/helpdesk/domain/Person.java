@@ -7,6 +7,7 @@ import java.util.Objects;
 import java.util.Set;
 import java.util.stream.Collectors;
 
+<<<<<<< HEAD
 import javax.persistence.CollectionTable;
 import javax.persistence.Column;
 import javax.persistence.ElementCollection;
@@ -16,11 +17,25 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
+=======
+>>>>>>> d55a6c077fccf3268de2af11398a65aa02332c33
 import org.hibernate.validator.constraints.br.CPF;
 
 import com.andrade.helpdesk.domain.enums.Profile;
 import com.fasterxml.jackson.annotation.JsonFormat;
 
+<<<<<<< HEAD
+=======
+import jakarta.persistence.CollectionTable;
+import jakarta.persistence.Column;
+import jakarta.persistence.ElementCollection;
+import jakarta.persistence.Entity;
+import jakarta.persistence.FetchType;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+
+>>>>>>> d55a6c077fccf3268de2af11398a65aa02332c33
 @Entity
 public abstract class Person implements Serializable {
 	
@@ -134,4 +149,8 @@ public abstract class Person implements Serializable {
 		return Objects.equals(cpf, other.cpf) && Objects.equals(id, other.id);
 	}
 	
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> d55a6c077fccf3268de2af11398a65aa02332c33
