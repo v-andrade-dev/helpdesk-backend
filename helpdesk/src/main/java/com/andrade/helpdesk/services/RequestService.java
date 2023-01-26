@@ -4,11 +4,8 @@ import java.time.LocalDate;
 import java.util.List;
 import java.util.Optional;
 
-<<<<<<< HEAD
 import javax.validation.Valid;
 
-=======
->>>>>>> d55a6c077fccf3268de2af11398a65aa02332c33
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -21,11 +18,6 @@ import com.andrade.helpdesk.domain.enums.Status;
 import com.andrade.helpdesk.repositories.RequestRepository;
 import com.andrade.helpdesk.services.exceptions.ObjNotFoundException;
 
-<<<<<<< HEAD
-=======
-import jakarta.validation.Valid;
-
->>>>>>> d55a6c077fccf3268de2af11398a65aa02332c33
 @Service
 public class RequestService {
 

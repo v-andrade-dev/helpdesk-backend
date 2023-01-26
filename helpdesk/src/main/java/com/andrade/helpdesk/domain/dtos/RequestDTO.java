@@ -3,19 +3,12 @@ package com.andrade.helpdesk.domain.dtos;
 import java.io.Serializable;
 import java.time.LocalDate;
 
-<<<<<<< HEAD
 import javax.validation.constraints.NotNull;
 
 import com.andrade.helpdesk.domain.Request;
 import com.fasterxml.jackson.annotation.JsonFormat;
 
-=======
-import com.andrade.helpdesk.domain.Request;
-import com.fasterxml.jackson.annotation.JsonFormat;
 
-import jakarta.validation.constraints.NotNull;
-
->>>>>>> d55a6c077fccf3268de2af11398a65aa02332c33
 public class RequestDTO implements Serializable{
 	private static final long serialVersionUID = 1L;
 	
@@ -124,9 +117,4 @@ public class RequestDTO implements Serializable{
 		this.clientName = clientName;
 	}
 	
-	
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> d55a6c077fccf3268de2af11398a65aa02332c33

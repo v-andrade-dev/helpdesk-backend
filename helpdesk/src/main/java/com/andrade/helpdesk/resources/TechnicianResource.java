@@ -4,11 +4,8 @@ import java.net.URI;
 import java.util.List;
 import java.util.stream.Collectors;
 
-<<<<<<< HEAD
 import javax.validation.Valid;
 
-=======
->>>>>>> d55a6c077fccf3268de2af11398a65aa02332c33
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -25,11 +22,6 @@ import com.andrade.helpdesk.domain.Technician;
 import com.andrade.helpdesk.domain.dtos.TechnicianDTO;
 import com.andrade.helpdesk.services.TechnicianService;
 
-<<<<<<< HEAD
-=======
-import jakarta.validation.Valid;
-
->>>>>>> d55a6c077fccf3268de2af11398a65aa02332c33
 @RestController
 @RequestMapping(value = "/technician")
 public class TechnicianResource {

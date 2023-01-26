@@ -4,7 +4,6 @@ import java.io.Serializable;
 import java.time.LocalDate;
 import java.util.Objects;
 
-<<<<<<< HEAD
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -12,22 +11,10 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 
-=======
->>>>>>> d55a6c077fccf3268de2af11398a65aa02332c33
 import com.andrade.helpdesk.domain.enums.Priority;
 import com.andrade.helpdesk.domain.enums.Status;
 import com.fasterxml.jackson.annotation.JsonFormat;
 
-<<<<<<< HEAD
-=======
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import jakarta.persistence.JoinColumn;
-import jakarta.persistence.ManyToOne;
-
->>>>>>> d55a6c077fccf3268de2af11398a65aa02332c33
 @Entity
 public class Request implements Serializable{
 	
@@ -163,9 +150,4 @@ public class Request implements Serializable{
 	}
 	
 	
-	
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> d55a6c077fccf3268de2af11398a65aa02332c33

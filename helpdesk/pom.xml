@@ -5,27 +5,16 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-<<<<<<< HEAD
 		<version>2.3.12.RELEASE</version>
 		<relativePath /> <!-- lookup parent from repository -->
-=======
-		<version>3.0.1</version>
-		<relativePath/> <!-- lookup parent from repository -->
->>>>>>> d55a6c077fccf3268de2af11398a65aa02332c33
 	</parent>
 	<groupId>com.andrade</groupId>
 	<artifactId>helpdesk</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>helpdesk</name>
-<<<<<<< HEAD
 	<description>Demo project for Spring Boot</description>
 	<properties>
 		<java.version>11</java.version>
-=======
-	<description>Project for Spring Boot</description>
-	<properties>
-		<java.version>17</java.version>
->>>>>>> d55a6c077fccf3268de2af11398a65aa02332c33
 	</properties>
 	<dependencies>
 		<dependency>
@@ -40,10 +29,6 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
-<<<<<<< HEAD
-=======
-
->>>>>>> d55a6c077fccf3268de2af11398a65aa02332c33
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-devtools</artifactId>
@@ -56,18 +41,13 @@
 			<scope>runtime</scope>
 		</dependency>
 		<dependency>
-<<<<<<< HEAD
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
-=======
-			<groupId>com.mysql</groupId>
-			<artifactId>mysql-connector-j</artifactId>
->>>>>>> d55a6c077fccf3268de2af11398a65aa02332c33
 			<scope>runtime</scope>
 		</dependency>
+		<!-- Security -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
-<<<<<<< HEAD
 			<artifactId>spring-boot-starter-security</artifactId>
 		</dependency>
 		<dependency>
@@ -77,16 +57,10 @@
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
-=======
->>>>>>> d55a6c077fccf3268de2af11398a65aa02332c33
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
-<<<<<<< HEAD
-=======
-
->>>>>>> d55a6c077fccf3268de2af11398a65aa02332c33
 	<build>
 		<plugins>
 			<plugin>
@@ -95,8 +69,4 @@
 			</plugin>
 		</plugins>
 	</build>
-<<<<<<< HEAD
-=======
-
->>>>>>> d55a6c077fccf3268de2af11398a65aa02332c33
 </project>

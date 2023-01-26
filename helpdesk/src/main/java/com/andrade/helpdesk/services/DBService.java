@@ -48,8 +48,4 @@ public class DBService {
 		clientRepository.saveAll(Arrays.asList(client1, client2));
 		requestRepository.saveAll(Arrays.asList(req1,req2));
 	}
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> d55a6c077fccf3268de2af11398a65aa02332c33

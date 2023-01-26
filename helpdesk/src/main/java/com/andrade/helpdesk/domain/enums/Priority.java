@@ -35,8 +35,4 @@ public enum Priority {
 		
 		throw new IllegalArgumentException("Prioridade inválida");
 	}
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> d55a6c077fccf3268de2af11398a65aa02332c33
