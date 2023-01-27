@@ -3,6 +3,7 @@ package com.andrade.helpdesk.services;
 import java.util.Arrays;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import com.andrade.helpdesk.domain.Client;
@@ -27,16 +28,20 @@ public class DBService {
 	@Autowired
 	private RequestRepository requestRepository;
 	
+	@Autowired
+	private BCryptPasswordEncoder encoder;
+	
+	
 	public void DBInstance() {
 		
-		Technician tec1 = new Technician(null, "Carlos Eduardo", "146.230.615-23", "dudu@mail.com", "123");
+		Technician tec1 = new Technician(null, "Carlos Eduardo", "146.230.615-23", "dudu@mail.com", encoder.encode("123"));
 		tec1.addProfile(Profile.ADMIN);
 		
-		Technician tec2 = new Technician(null, "Vinicius Andrade", "845.785.933-12", "andrade@mail.com", "123");
+		Technician tec2 = new Technician(null, "Vinicius Andrade", "845.785.933-12", "andrade@mail.com", encoder.encode("123"));
 		tec2.addProfile(Profile.ADMIN);
 		
-		Client client1 = new Client(null, "Daniel Ribeiro", "320.492.895-02", "daniel@mail.com", "123");
-		Client client2 = new Client(null, "Carol Souza", "633.281.507-81", "carol@mail.com", "123");
+		Client client1 = new Client(null, "Daniel Ribeiro", "320.492.895-02", "daniel@mail.com", encoder.encode("123"));
+		Client client2 = new Client(null, "Carol Souza", "633.281.507-81", "carol@mail.com", encoder.encode("123"));
 
 	
 		Request req1 = new Request(null, Priority.MEDIUM, Status.PROGRESS, "Chamado 01", "Primeiro chamado", tec1, client1);
