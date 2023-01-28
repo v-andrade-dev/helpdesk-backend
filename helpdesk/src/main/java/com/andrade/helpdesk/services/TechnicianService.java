@@ -46,6 +46,7 @@ public class TechnicianService {
 	
 	public Technician update(Integer id, @Valid TechnicianDTO objDTO) {
 		objDTO.setId(id);
+		objDTO.setPassword(encoder.encode(objDTO.getPassword()));
 		Technician oldObj = findById(id);
 		uniqueDataValidation(objDTO);
 		oldObj = new Technician(objDTO);
