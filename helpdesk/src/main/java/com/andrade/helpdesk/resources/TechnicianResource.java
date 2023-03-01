@@ -45,7 +45,7 @@ public class TechnicianResource {
 		return ResponseEntity.ok().body(listDTO);
 	}
 	
-	@PreAuthorize("hasAnyRole('ADMIN')")
+	@PreAuthorize("hasRole('ADMIN')")
 	@PostMapping
 	public ResponseEntity<TechnicianDTO> create(@Valid @RequestBody TechnicianDTO objDTO){
 		Technician newObj = service.create(objDTO);
@@ -53,14 +53,14 @@ public class TechnicianResource {
 		return ResponseEntity.created(uri).build();
 	}
 	
-	@PreAuthorize("hasAnyRole('ADMIN')")
+	@PreAuthorize("hasRole('ADMIN')")
 	@PutMapping(value = "/{id}")
 	public ResponseEntity<TechnicianDTO> update(@PathVariable Integer id, @Valid @RequestBody TechnicianDTO objDTO){
 		Technician obj = service.update(id, objDTO);
 		return ResponseEntity.ok().body(new TechnicianDTO(obj));
 	}
 	
-	@PreAuthorize("hasAnyRole('ADMIN')")
+	@PreAuthorize("hasRole('ADMIN')")
 	@DeleteMapping(value = "/{id}")
 	public ResponseEntity<TechnicianDTO> delete(@PathVariable Integer id){
 		service.delete(id);
